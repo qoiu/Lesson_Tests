@@ -31,15 +31,20 @@ class Hw01 {
     }
 
     static boolean containsNumber(int[] array,int...cont){
+        boolean b[]=new boolean[cont.length];
         for (int i:array) {
-            boolean b=false;
-            for (int c:cont) {
-                if (i == c) {
-                    b = true;
+            boolean v=false;
+            for (int z=0;z<cont.length;z++) {
+                if (i == cont[z]) {
+                    b[z] = true;
+                    v=true;
                     break;
                 }
             }
-        if(!b)return false;
+            if(!v) return false;
+        }
+        for(boolean v:b){
+            if(!v)return false;
         }
         return true;
     }

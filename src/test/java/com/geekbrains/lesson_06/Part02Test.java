@@ -17,7 +17,7 @@ public class Part02Test {
     public static Collection<Object[]> params(){
         return Arrays.asList(new Object[][]{
                 {new int[]{1,1,1,4,4,4}},
-                {new int[]{1,1,3,4,4}},
+                {new int[]{1,1,1,1,1}},
                 {new int[]{1,1,1,5}},
                 {new int[]{4,12,23,6,9,0}},
                 {new int[]{1, 2, 2, 2, 3, 4, 5,4}}
